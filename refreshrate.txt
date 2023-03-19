@@ -1,0 +1,16 @@
+### In case the main monitor doesn't use the full available refresh rate
+
+1. Disable Compositor
+2. "Force Full Composition Pipeline" in nvidia-settings for all monitors
+3. Disable "Sync to VBlank" and "Allow Flipping" in nvidia-settings -> OpenGL Settings
+4. Edit /etc/environment and add these options at the end:
+
+	CLUTTER_DEFAULT_FPS=<highest_refresh_rate>
+	__GL_SYNC_DISPLAY_DEVICE=<display_with_highest_refresh_rate>
+	__GL_SYNC_TO_VBLANK=0
+
+<highest_refresh_rate> = max refresh rate of main monitor
+<display_with_highest_refresh_rate> = check which monitor in the output of 'xrandr', f.e. DP-2
+
+5. xrandr --output DP-4 --mode <resolution> --rate <refresh_rate>
+6. Add nvidia settings to silet startup: nvidia-settings --load-config-only
