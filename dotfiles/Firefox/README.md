@@ -1,6 +1,6 @@
 ### How to setup Firefox custom style
 
-![about profiles screenshot](https://github.com/AmekxOne/arch-config/tree/main/dotfiles/Firefox/img/aboutprofiles.jpg)
+![about profiles screenshot](https://raw.githubusercontent.com/AmekxOne/arch-config/main/dotfiles/Firefox/img/aboutprofiles.jpg)
 
 1. Go to `about:profiles`
 2. Open Root Directory folder
