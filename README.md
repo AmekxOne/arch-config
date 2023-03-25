@@ -1,3 +1,3 @@
-# Arch system config scripts
+# Arch system config
 
-This repo contains scripts I use to quickly setup a brand new installation of Arch Linux
+This repo contains scripts, guides and dotfiles for my system configuration.
